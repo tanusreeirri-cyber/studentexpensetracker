@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Student Expense Tracker</h1>
+        <p>Track your daily expenses easily!</p>
+
+        <div class="total-card">
+            <h3>Total Expenses</h3>
+            <h2 id="total">₹0.00</h2>
+        </div>
+
+        <form id="expenseForm">
+            <input type="text" id="title"
+                   placeholder="Expense name" required>
+
+            <input type="number" id="amount"
+                   placeholder="Amount (₹)" min="0.01"
+                   step="0.01" required>
+
+            <button type="submit">Add Expense</button>
+        </form>
+
+        <h2>Expense History</h2>
+        <ul id="expenseList"></ul>
+        <p id="message"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
